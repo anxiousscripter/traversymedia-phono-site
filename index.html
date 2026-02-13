@@ -21,7 +21,7 @@
     />
     <link
       rel="stylesheet"
-      href="simplelightbox-master/dist/simple-lightbox.min.css"
+      href="simplelightbox-master/dist/simple-lightbox.css"
     />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/utilities.css" />
@@ -76,11 +76,37 @@
     </section>
     <!-- OVERLAY SECTION ENDS HERE -->
 
+    <!-- GALLERY STARTS HERE -->
+    <section class="gallery-section">
+      <div class="gallery">
+        <a href="assets/images/gal_1.jpg" class="big">
+          <img src="assets/images/gal_1.jpg" alt="" />
+        </a>
+        <a href="assets/images/gal_2.jpg" class="big">
+          <img src="assets/images/gal_2.jpg" alt="" />
+        </a>
+        <a href="assets/images/gal_3.jpg" class="big">
+          <img src="assets/images/gal_3.jpg" alt="" />
+        </a>
+        <a href="assets/images/gal_4.jpg" class="big">
+          <img src="assets/images/gal_4.jpg" alt="" />
+        </a>
+        <a href="assets/images/gal_5.jpg" class="big">
+          <img src="assets/images/gal_5.jpg" alt="" />
+        </a>
+        <a href="assets/images/gal_6.jpg" class="big">
+          <img src="assets/images/gal_6.jpg" alt="" />
+        </a>
+      </div>
+    </section>
+    <!-- GALLERY ENDS HERE -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="simplelightbox-master/dist/simple-lightbox.min.js"></script>
+    <script src="simplelightbox-master/dist/simple-lightbox.jquery.min.js"></script>
     <script>
       $(function () {
         const $gallery = $(".gallery a").simpleLightbox();
+        $gallery.next();
       });
     </script>
   </body>
